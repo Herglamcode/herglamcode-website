@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HerGlamCode - Premium Beauty Services in Lekki & Ajah, Lagos</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for Playfair Display and Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" xintegrity="sha512-Fo3rlroMqrnF0m9fXyQ7h7Q0d7iWz1Pz8z0y1z6P9j1z6G1z7R1z2Q2w1z3z1z6A1z7E1z2A2z3B2z4C2z5D2z6F2z7G2z8H2z9I2zJ2zK2zL2zM2zN2zO2zP2zQ2zR2zS2zT2zU2zV2zW2zX2zY2zZ2zAA2zAB2zAC2zAD2zAE2zAF2zAG2zAH2zAI2zAJ2zAK2zAL2zAM2zAN2zAO2zAP2zBQ2zBR2zBS2zBT2zBU2zBV2zBW2zBX2zBY2zBZ2zCA2zCB2zCC2zCD2zCE2zCF2zCG2zCH2zCI2zCJ2zCK2zCL2zCM2zCN2zCO2zCP2zCQ2zCR2zCS2zCT2zCU2zCV2zCW2zCX2zCY2zCZ2zDA2zDB2zDC2zDD2zDE2zDF2zDG2zDH2zDI2zDJ2zDK2zDL2zDM2zDN2zDO2zDP2zDQ2zDR2zDS2zDT2zDU2zDV2zDW2zDX2zDY2zDZ2zEA2zEB2zEC2zED2zEE2zEF2zEG2zEH2zEI2zEJ2zEK2zEL2zEM2zEN2zEO2zEP2zEQ2zER2zES2zET2zEU2zEV2zEW2zEX2zEY2zEZ2zFA2zFB2zFC2zFD2zFE2zFF2zFG2zFH2zFI2zFJ2zFK2zFL2zFM2zFN2zFO2zFP2zFQ2zFR2zFS2zFT2zFU2zFV2zFW2zFX2zFY2zFZ2zGA2zGB2zGC2zGD2zGE2zGF2zGG2zGH2zGI2zGJ2zGK2zGL2zGM2zGN2zGO2zGP2zGQ2zGR2zGS2zGT2zGU2zGV2zGW2zGX2zGY2zGZ2zHA2zHB2zHC2zHD2zHE2zHF2zHG2zHH2zHI2zHJ2zHK2zHL2zHM2zHN2zHO2zHP2zHQ2zHR2zHS2zHT2zHU2zHV2zHW2zHX2zHY2zHZ2zIA2zIB2zIC2zID2zIE2zIF2zIG2zIH2zII2zIJ2zIK2zIL2zIM2zIN2zIO2zIP2zIQ2zIR2zIS2zIT2zIU2zIV2zIW2zIX2zIY2zIZ2zJA2zJB2zJC2zJD2zJE2zJF2zJG2zJH2zJI2zJJ2zJK2zJL2zJM2zJN2zJO2zJP2zJQ2zJR2zJS2zJT2zJU2zJV2zJW2zJX2zJY2zJZ2zKA2zKB2zKC2zKD2zKE2zKF2zKG2zKH2zKI2zKJ2zKK2zKL2zKM2zKN2zKO2zKP2zKQ2zKR2zKS2zKT2zKU2zKV2zKW2zKX2zKY2zKZ2zLA2zLB2zLC2zLD2zLE2zLF2zLG2zLH2zLI2zLJ2zLK2zLL2zLM2zLN2zLO2zLP2zLQ2zLR2zLS2zLT2zLU2zLV2zLW2zLX2zLY2zLZ2zMA2zMB2zMC2zMD2zME2zMF2zMG2zMH2zMI2zMJ2zMK2zML2zMM2zMN2zMO2zMP2zMQ2zMR2zMS2zMT2zMU2zMV2zMW2zMX2zMY2zMZ2zNA2zNB2zNC2zND2zNE2zNF2zNG2zNH2zNI2zNJ2zNK2zNL2zNM2zNN2zNO2zNP2zNQ2zNR2zNS2zNT2zNU2zNV2zNW2zNX2zNY2zNZ2zOA2zOB2zOC2zOD2zOE2zOF2zOG2zOH2zOI2zOJ2zOK2zOL2zOM2zON2zOO2zOP2zOQ2zOR2zOS2zOT2zOU2zOV2zOW2zOX2zOY2zOZ2zPA2zPB2zPC2zPD2zPE2zPF2zPG2zPH2zPI2zPJ2zPK2zPL2zPM2zPN2zPO2zPP2zPQ2zPR2zPS2zPT2zPU2zPV2zPW2zPX2zPY2zPZ2zQA2zQB2zQC2zQD2zQE2zQF2zQG2zQH2zQI2zQJ2zQK2zQL2zQM2zQN2zQO2zQP2zQQ2zQR2zQS2zQT2zQU2zQV2zQW2zQX2zQY2zQZ2zRA2zRB2zRC2zRD2zRE2zRF2zRG2zRH2zRI2zRJ2zRK2zRL2zRM2zRN2zRO2zRP2zRQ2zRR2zRS2zRT2zRU2zRV2zRW2zRX2zRY2zRZ2zSA2zSB2zSC2zSD2zSE2zSF2zSG2zSH2zSI2zSJ2zSK2zSL2zSM2zSN2zSO2zSP2zSQ2zSR2zSS2zST2zSU2zSV2zSW2zSX2zSY2zSZ2zTA2zTB2zTC2zTD2zTE2zTF2zTG2zTH2zTI2zTJ2zTK2zTL2zTM2zTN2zTO2zTP2zTQ2zTR2zTS2zTT2zTU2zTV2zTW2zTX2zTY2zTZ2zUA2zUB2zUC2zUD2zUE2zUF2zUG2zUH2zUI2zUJ2zUK2zUL2zUM2zUN2zUO2zUP2zUQ2zUR2zUS2zUT2zUU2zUV2zUW2zUX2zUY2zUZ2zVA2zVB2zVC2zVD2zVE2zVF2zVG2zVH2zVI2zVJ2zVK2zVL2zVM2zVN2zVO2zVP2zVQ2zVR2zVS2zVT2zVU2zVV2zVW2zVX2zVY2zVZ2zWA2zWB2zWC2zWD2zWE2zWF2zWG2zWH2zWI2zWJ2zWK2zWL2zWM2zWN2zWO2zWP2zWQ2zWR2zWS2zWT2zWU2zWV2zWW2zWX2zWY2zWZ2zXA2zXB2zXC2zXD2zXE2zXF2zXG2zXH2zXI2zXJ2zXK2zXL2zXM2zXN2zXO2zXP2zXQ2zXR2zXS2zXT2zXU2zXV2zXW2zXX2zXY2zXZ2zYA2zYB2zYC2zYD2zYE2zYF2zYG2zYH2zYI2zYJ2zYK2zYL2zYM2zYN2zYO2zYP2zYQ2zYR2zYS2zYT2zYU2zYV2zYW2zYX2zYY2zYZ2zZA2zZB2zZC2zZD2zZE2zZF2zZG2zZH2zZI2zZJ2zZK2zZL2zZM2zZN2zZO2zZP2zZQ2zZR2zZS2zZT2zZU2zZV2zZW2zZX2zZY2zZZ2z" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Custom font imports for Playfair Display and Poppins */
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        /* Custom colors based on #CBAACB - Soft Mauve / Orchid */
+        .bg-herglam-mauve {
+            background-color: #CBAACB;
+        }
+        .text-herglam-mauve {
+            color: #CBAACB;
+        }
+        .border-herglam-mauve {
+            border-color: #CBAACB;
+        }
+        .hover\:bg-herglam-mauve-dark:hover {
+            background-color: #B599B5; /* A slightly darker shade for hover effects */
+        }
+        .bg-gradient-herglam {
+            background-image: linear-gradient(to right, #CBAACB, #A990A9); /* Soft gradient */
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-lg p-4 sticky top-0 z-50 rounded-b-xl mx-2 mt-2">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-3xl font-bold text-herglam-mauve" style="font-family: 'Playfair Display', serif;">HerGlamCode</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-700 hover:text-herglam-mauve font-medium transition duration-300 ease-in-out">Home</a>
+                <a href="#about" class="text-gray-700 hover:text-herglam-mauve font-medium transition duration-300 ease-in-out">About</a>
+                <a href="#services" class="text-gray-700 hover:text-herglam-mauve font-medium transition duration-300 ease-in-out">Services</a>
+                <a href="#gallery" class="text-gray-700 hover:text-herglam-mauve font-medium transition duration-300 ease-in-out">Gallery</a>
+                <a href="#testimonials" class="text-gray-700 hover:text-herglam-mauve font-medium transition duration-300 ease-in-out">Testimonials</a>
+                <a href="#faqs" class="text-gray-700 hover:text-herglam-mauve font-medium transition duration-300 ease-in-out">FAQs</a>
+                <a href="#contact" class="text-gray-700 hover:text-herglam-mauve font-medium transition duration-300 ease-in-out">Contact</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-gray-600 focus:outline-none" id="mobile-menu-button">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden mt-4 space-y-3 text-center" id="mobile-menu">
+            <a href="#home" class="block text-gray-700 hover:text-herglam-mauve font-medium py-2 rounded-md bg-gray-100">Home</a>
+            <a href="#about" class="block text-gray-700 hover:text-herglam-mauve font-medium py-2 rounded-md bg-gray-100">About</a>
+            <a href="#services" class="block text-gray-700 hover:text-herglam-mauve font-medium py-2 rounded-md bg-gray-100">Services</a>
+            <a href="#gallery" class="block text-gray-700 hover:text-herglam-mauve font-medium py-2 rounded-md bg-gray-100">Gallery</a>
+            <a href="#testimonials" class="block text-gray-700 hover:text-herglam-mauve font-medium py-2 rounded-md bg-gray-100">Testimonials</a>
+            <a href="#faqs" class="block text-gray-700 hover:text-herglam-mauve font-medium py-2 rounded-md bg-gray-100">FAQs</a>
+            <a href="#contact" class="block text-gray-700 hover:text-herglam-mauve font-medium py-2 rounded-md bg-gray-100">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-gradient-herglam text-white py-24 px-4 rounded-xl shadow-lg mx-4 mt-6 overflow-hidden">
+        <div class="absolute inset-0 opacity-20" style="background-image: url('https://placehold.co/1200x800/CBAACB/FFFFFF?text=Glamour'); background-size: cover; background-position: center;"></div>
+        <div class="relative container mx-auto text-center z-10">
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-4 leading-tight drop-shadow-md" style="font-family: 'Playfair Display', serif;">
+                Unlock Your Inner Radiance with HerGlamCode
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 opacity-95 max-w-3xl mx-auto drop-shadow-md">
+                Where beauty meets precision, and every service is coded with glam, confidence, and care.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#booking" class="inline-block bg-white text-herglam-mauve font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transform hover:scale-105 transition duration-300 ease-in-out text-lg">
+                    Book Now
+                </a>
+                <a href="#services" class="inline-block border-2 border-white text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-white hover:text-herglam-mauve transform hover:scale-105 transition duration-300 ease-in-out text-lg">
+                    Explore Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-gray-100 py-16 px-4 rounded-xl shadow-inner mx-4 mt-6">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-12 text-gray-900" style="font-family: 'Playfair Display', serif;">About HerGlamCode</h2>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-12">
+                <div class="md:w-1/2">
+                    <img src="https://placehold.co/600x400/E0E7FF/4338CA?text=HerGlamCode+Story" alt="HerGlamCode Story" class="rounded-xl shadow-lg w-full h-auto object-cover">
+                </div>
+                <div class="md:w-1/2 text-left">
+                    <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                        Welcome to HerGlamCode — where beauty meets precision, and every service is coded with glam, confidence, and care. We are a beauty and lifestyle brand dedicated to empowering women through premium services, high-quality cosmetic products, and expert styling advice. Our goal is to make you look and feel your best, whether it's for a big event or your everyday glow-up.
+                    </p>
+                    <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                        At HerGlamCode, our mission is to help every woman unlock her inner confidence and beauty. We believe that beauty is powerful, and every woman deserves to feel bold, elegant, and radiant in her own skin. Our brand is rooted in self-expression, authenticity, and empowerment. We serve beauty-conscious women, ages 18-40, who are passionate about looking and feeling their best.
+                    </p>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4" style="font-family: 'Playfair Display', serif;">What Makes Us Different?</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        We offer a personalized beauty experience curated just for you. From expertly formulated products to bespoke beauty consultations, HerGlamCode blends innovation, quality, and care. Our unique glam code speaks to the modern woman who values excellence, self-care, and individuality.
+                    </p>
+                </div>
+            </div>
+            <div class="mt-12">
+                <h3 class="text-3xl font-bold mb-6 text-gray-900" style="font-family: 'Playfair Display', serif;">Meet Joy - Your Beauty Expert</h3>
+                <div class="flex flex-col items-center">
+                    <img src="https://placehold.co/150x150/CBAACB/FFFFFF?text=Joy" alt="Joy - Founder of HerGlamCode" class="rounded-full w-40 h-40 object-cover border-4 border-herglam-mauve shadow-lg mb-6">
+                    <p class="max-w-2xl text-center text-lg text-gray-700">
+                        All services at HerGlamCode are meticulously provided by Joy, the passionate founder and a certified PMU artist and beauty professional. With years of experience and a keen eye for detail, Joy ensures every client receives a bespoke and flawless beauty experience. As HerGlamCode grows, select trained team members may assist with services, maintaining our high standards of quality and care.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 px-4">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-900" style="font-family: 'Playfair Display', serif;">Our Premium Services</h2>
+            <p class="text-center text-lg text-gray-600 mb-10 max-w-3xl mx-auto">
+                Discover our range of high-end beauty services designed to make you feel bold, empowered, and flawless. We offer home and mobile services within Ajah and Lekki, extending from Sangotedo to Banana Island, Lagos. Studio appointments are available upon request.
+            </p>
+
+            <!-- Waxing Services -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-semibold text-gray-900 mb-8 border-b-2 border-herglam-mauve pb-4" style="font-family: 'Playfair Display', serif;">
+                    <i class="fas fa-spa text-herglam-mauve mr-3"></i> Waxing Services
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Full Body Wax -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg transform hover:scale-105 transition duration-300 ease-in-out border-t-4 border-herglam-mauve">
+                        <h4 class="text-2xl font-semibold text-gray-900 mb-3">Full Body Wax</h4>
+                        <p class="text-herglam-mauve text-xl font-bold mb-4">₦30,000</p>
+                        <p class="text-gray-600 mb-2"><i class="far fa-clock mr-2"></i> Duration: 1hr 15min – 1hr 30min</p>
+                        <p class="text-gray-700 text-sm mb-4">Complete hair removal: arms, legs, underarms, stomach, chest, bikini/Brazilian, back.</p>
+                        <p class="text-sm text-gray-500 italic">Client Tip: Do not shave before. Hair should be at least ¼ inch.</p>
+                        <a href="#booking" class="block text-center mt-6 bg-herglam-mauve text-white py-2 px-4 rounded-md hover:bg-herglam-mauve-dark transition duration-300 ease-in-out">Book Now</a>
+                    </div>
+                    <!-- Brazilian Wax -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg transform hover:scale-105 transition duration-300 ease-in-out border-t-4 border-herglam-mauve">
+                        <h4 class="text-2xl font-semibold text-gray-900 mb-3">Brazilian Wax</h4>
+                        <p class="text-herglam-mauve text-xl font-bold mb-4">₦25,000</p>
+                        <p class="text-gray-600 mb-2"><i class="far fa-clock mr-2"></i> Duration: 45 – 60 minutes</p>
+                        <p class="text-gray-700 text-sm mb-4">Full intimate area hair removal (front, sides, and butt strip).</p>
+                        <p class="text-sm text-gray-500 italic">Client Tip: Arrive freshly showered. No shaving 2 weeks prior.</p>
+                        <a href="#booking" class="block text-center mt-6 bg-herglam-mauve text-white py-2 px-4 rounded-md hover:bg-herglam-mauve-dark transition duration-300 ease-in-out">Book Now</a>
+                    </div>
+                    <!-- Bikini Wax -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg transform hover:scale-105 transition duration-300 ease-in-out border-t-4 border-herglam-mauve">
+                        <h4 class="text-2xl font-semibold text-gray-900 mb-3">Bikini Wax</h4>
+                        <p class="text-herglam-mauve text-xl font-bold mb-4">₦10,000</p>
+                        <p class="text-gray-600 mb-2"><i class="far fa-clock mr-2"></i> Duration: 30 minutes</p>
+                        <p class="text-gray-700 text-sm mb-4">Sides and top of the bikini line only.</p>
+                        <a href="#booking" class="block text-center mt-6 bg-herglam-mauve text-white py-2 px-4 rounded-md hover:bg-herglam-mauve-dark transition duration-300 ease-in-out">Book Now</a>
+                    </div>
+                    <!-- Underarm Wax -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg transform hover:scale-105 transition duration-300 ease-in-out border-t-4 border-herglam-mauve">
+                        <h4 class="text-2xl font-semibold text-gray-900 mb-3">Underarm Wax</h4>
+                        <p class="text-herglam-mauve text-xl font-bold mb-4">₦10,000</p>
+                        <p class="text-gray-600 mb-2"><i class="far fa-clock mr-2"></i> Duration: 20 minutes</p>
+                        <p class="text-gray-700 text-sm mb-4">Smooth, hair-free underarms.</p>
+                        <a href="#booking" class="block text-center mt-6 bg-herglam-mauve text-white py-2 px-4 rounded-md hover:bg-herglam-mauve-dark transition duration-300 ease-in-out">Book Now</a>
+                    </div>
+                    <!-- Stomach Wax -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg transform hover:scale-105 transition duration-300 ease-in-out border-t-4 border-herglam-mauve">
+                        <h4 class="text-2xl font-semibold text-gray-900 mb-3">Stomach Wax</h4>
+                        <p class="text-herglam-mauve text-xl font-bold mb-4">₦5,000</p>
+                        <p class="text-gray-600 mb-2"><i class="far fa-clock mr-2"></i> Duration: 15 – 20 minutes</p>
+                        <p class="text-gray-700 text-sm mb-4">Upper and lower belly area.</p>
+                        <a href="#booking" class="block text-center mt-6 bg-herglam-mauve text-white py-2 px-4 rounded-md hover:bg-herglam-mauve-dark transition duration-300 ease-in-out">Book Now</a>
+                    </div>
+                    <!-- Chest Wax -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg transform hover:scale-105 transition duration-300 ease-in-out border-t-4 border-herglam-mauve">
+                        <h4 class="text-2xl font-semibold text-gray-900 mb-3">Chest Wax</h4>
+                        <p class="text-herglam-mauve text-xl font-bold mb-4">₦10,000</p>
+                        <p class="text-gray-600 mb-2"><i class="far fa-clock mr-2"></i> Duration: 30 – 40 minutes</p>
+                        <p class="text-gray-700 text-sm mb-4">Full chest hair removal.</p>
+                        <a href="#booking" class="block text-center mt-6 bg-herglam-mauve text-white py-2 px-4 rounded-md hover:bg-herglam-mauve-dark transition duration-300 ease-in-out">Book Now</a>
+                    </div>
+                    <!-- Under Chin Wax (Men) -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg transform hover:scale-105 transition duration-300 ease-in-out border-t-4 border-herglam-mauve">
+                        <h4 class="text-2xl font-semibold text-gray-900 mb-3">Under Chin Wax (Men)</h4>
+                        <p class="text-herglam-mauve text-xl font-bold mb-4">₦10,000</p>
+                        <p class="text-gray-600 mb-2"><i class="far fa-clock mr-2"></i> Duration: 20 – 30 minutes</p>
+                        <p class="text-gray-700 text-sm mb-4">Removes coarse chin and neck hair.</p>
+                        <a href="#booking" class="block text-center mt-6 bg-herglam-mauve text-white py-2 px-4 rounded-md hover:bg-herglam-mauve-dark transition duration-300 ease-in-out">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Makeup & Lash Enhancements -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-semibold text-gray-900 mb-8 border-b-2 border-herglam-mauve pb-4" style="font-family: 'Playfair Display', serif;">
+                    <i class="fas fa-palette text-herglam-mauve mr-3"></i> Makeup & Lash Enhancements
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Bridal / Birthday Makeup -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg transform hover:scale-105 transition duration-300 ease-in-out border-t-4 border-herglam-mauve">
+                        <h4 class="text-2xl font-semibold text-gray-900 mb-3">Bridal / Birthday Makeup</h4>
+                        <p class="text-herglam-mauve text-xl font-bold mb-4">Contact for Quote</p>
+                        <p class="text-gray-600 mb-2"><i class="far fa-clock mr-2"></i> Duration: 1hr 30min – 2 hours</p>
+                        <p class="text-gray-700 text-sm mb-4">Includes skin prep, custom glam (soft or full), lashes, and touch-up kit.</p>
+                        <p class="text-sm text-gray-500 italic">Client Tip: Arrive with a clean face. No makeup or skincare products.</p>
+                        <a href="#contact" class="block text-center mt-6 bg-herglam-mauve text-white py-2 px-4 rounded-md hover:bg-herglam-mauve-dark transition duration-300 ease-in-out">Contact for Quote</a>
+                    </div>
+                    <!-- Lash Extensions -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg transform hover:scale-105 transition duration-300 ease-in-out border-t-4 border-herglam-mauve">
+                        <h4 class="text-2xl font-semibold text-gray-900 mb-3">Lash Extensions</h4>
+                        <p class="text-herglam-mauve text-xl font-bold mb-4">Contact for Consultation</p>
+                        <p class="text-gray-600 mb-2"><i class="far fa-clock mr-2"></i> Duration: 1hr 30min – 2hr+</p>
+                        <p class="text-gray-700 text-sm mb-4">Classic, Hybrid, or Volume styles available.</p>
+                        <p class="text-sm text-gray-500 italic">Client Tip: No mascara or oil-based products before session.</p>
+                        <a href="https://wa.link/q9vwrc" target="_blank" class="block text-center mt-6 bg-herglam-mauve text-white py-2 px-4 rounded-md hover:bg-herglam-mauve-dark transition duration-300 ease-in-out">WhatsApp for Consultation</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Microblading & Body Piercing -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-semibold text-gray-900 mb-8 border-b-2 border-herglam-mauve pb-4" style="font-family: 'Playfair Display', serif;">
+                    <i class="fas fa-feather-alt text-herglam-mauve mr-3"></i> Microblading & Piercing
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Microblading -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg transform hover:scale-105 transition duration-300 ease-in-out border-t-4 border-herglam-mauve">
+                        <h4 class="text-2xl font-semibold text-gray-900 mb-3">Microblading</h4>
+                        <p class="text-herglam-mauve text-xl font-bold mb-4">Please DM for Consultation</p>
+                        <p class="text-gray-600 mb-2"><i class="far fa-clock mr-2"></i> Duration: 2hrs+ (includes numbing and mapping)</p>
+                        <p class="text-gray-700 text-sm mb-4">Natural-looking brows with hair-like strokes. Touch-up included after 4–6 weeks.</p>
+                        <a href="https://www.instagram.com/herglamcode/" target="_blank" class="block text-center mt-6 bg-herglam-mauve text-white py-2 px-4 rounded-md hover:bg-herglam-mauve-dark transition duration-300 ease-in-out">DM on Instagram</a>
+                    </div>
+                    <!-- Body Piercing -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg transform hover:scale-105 transition duration-300 ease-in-out border-t-4 border-herglam-mauve">
+                        <h4 class="text-2xl font-semibold text-gray-900 mb-3">Body Piercing</h4>
+                        <p class="text-herglam-mauve text-xl font-bold mb-4">Starting from ₦10,000</p>
+                        <p class="text-gray-600 mb-2"><i class="far fa-clock mr-2"></i> Duration: 15 – 30 minutes</p>
+                        <p class="text-gray-700 text-sm mb-4">Ear, nose, belly button, and intimate piercings. Sterile tools used + aftercare instructions provided.</p>
+                        <a href="#booking" class="block text-center mt-6 bg-herglam-mauve text-white py-2 px-4 rounded-md hover:bg-herglam-mauve-dark transition duration-300 ease-in-out">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coming Soon -->
+            <div class="text-center bg-gray-50 p-10 rounded-xl shadow-inner border-2 border-dashed border-herglam-mauve">
+                <h3 class="text-3xl font-semibold text-gray-900 mb-4" style="font-family: 'Playfair Display', serif;">
+                    <i class="fas fa-hourglass-half text-herglam-mauve mr-3"></i> Coming Soon!
+                </h3>
+                <p class="text-xl text-gray-700 mb-6">Exciting new services are on their way to enhance your beauty journey:</p>
+                <ul class="list-disc list-inside text-lg text-gray-600 space-y-2 max-w-md mx-auto">
+                    <li>Braiding</li>
+                    <li>Pedicures</li>
+                    <li>Nails</li>
+                    <li>Hair Styling</li>
+                </ul>
+                <p class="mt-6 text-md text-gray-500">Stay tuned for updates on our social media!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="bg-gray-100 py-16 px-4 rounded-xl shadow-inner mx-4 mt-6">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-12 text-gray-900" style="font-family: 'Playfair Display', serif;">Our Glam Transformations</h2>
+            <p class="text-lg text-gray-700 mb-10 max-w-3xl mx-auto">
+                Witness the HerGlamCode difference! Explore our portfolio of stunning before & after photos and video snippets showcasing our artistry in makeup, waxing, lash extensions, microblading, and piercings.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Placeholder Image 1 -->
+                <div class="rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">
+                    <img src="https://placehold.co/600x400/CBAACB/FFFFFF?text=Makeup+Glam+1" alt="Makeup Transformation 1" class="w-full h-auto object-cover">
+                    <div class="p-4 bg-white">
+                        <p class="text-gray-700 font-semibold">Bridal Makeup</p>
+                    </div>
+                </div>
+                <!-- Placeholder Image 2 -->
+                <div class="rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">
+                    <img src="https://placehold.co/600x400/A990A9/FFFFFF?text=Lash+Extensions" alt="Lash Extensions" class="w-full h-auto object-cover">
+                    <div class="p-4 bg-white">
+                        <p class="text-gray-700 font-semibold">Volume Lash Extensions</p>
+                    </div>
+                </div>
+                <!-- Placeholder Image 3 -->
+                <div class="rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">
+                    <img src="https://placehold.co/600x400/CBAACB/FFFFFF?text=Microblading" alt="Microblading Results" class="w-full h-auto object-cover">
+                    <div class="p-4 bg-white">
+                        <p class="text-gray-700 font-semibold">Natural Microblading</p>
+                    </div>
+                </div>
+                <!-- Placeholder Image 4 -->
+                <div class="rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">
+                    <img src="https://placehold.co/600x400/A990A9/FFFFFF?text=Waxing+Smooth" alt="Waxing Results" class="w-full h-auto object-cover">
+                    <div class="p-4 bg-white">
+                        <p class="text-gray-700 font-semibold">Silky Smooth Waxing</p>
+                    </div>
+                </div>
+                <!-- Placeholder Image 5 -->
+                <div class="rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">
+                    <img src="https://placehold.co/600x400/CBAACB/FFFFFF?text=Piercing+Art" alt="Body Piercing" class="w-full h-auto object-cover">
+                    <div class="p-4 bg-white">
+                        <p class="text-gray-700 font-semibold">Chic Body Piercing</p>
+                    </div>
+                </div>
+                <!-- Placeholder Image 6 -->
+                <div class="rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">
+                    <img src="https://placehold.co/600x400/A990A9/FFFFFF?text=Event+Glam" alt="Event Makeup" class="w-full h-auto object-cover">
+                    <div class="p-4 bg-white">
+                        <p class="text-gray-700 font-semibold">Birthday Glam Look</p>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center text-lg text-gray-700 mt-10">
+                <i class="fas fa-images mr-2 text-herglam-mauve"></i> For more transformations, follow us on Instagram <a href="https://www.instagram.com/herglamcode/" target="_blank" class="text-herglam-mauve hover:underline">@herglamcode</a>!
+            </p>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 px-4">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-12 text-gray-900" style="font-family: 'Playfair Display', serif;">What Our Clients Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg border-b-4 border-herglam-mauve">
+                    <i class="fas fa-quote-left text-herglam-mauve text-3xl mb-4"></i>
+                    <p class="text-gray-700 italic mb-6">"HerGlamCode is my go-to for everything beauty! Joy is incredibly skilled, and every service feels luxurious. My full body wax was meticulous, and the results are always perfect. Highly recommend!"</p>
+                    <p class="font-semibold text-gray-800">- Aisha O.</p>
+                    <p class="text-sm text-gray-500">Lekki, Lagos</p>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg border-b-4 border-herglam-mauve">
+                    <i class="fas fa-quote-left text-herglam-mauve text-3xl mb-4"></i>
+                    <p class="text-gray-700 italic mb-6">"I had my bridal makeup done by Joy, and she truly made me feel like a queen. The glam was flawless, lasted all day, and I received so many compliments. Her attention to detail is unmatched!"</p>
+                    <p class="font-semibold text-gray-800">- Chinwe E.</p>
+                    <p class="text-sm text-gray-500">Ajah, Lagos</p>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg border-b-4 border-herglam-mauve">
+                    <i class="fas fa-quote-left text-herglam-mauve text-3xl mb-4"></i>
+                    <p class="text-gray-700 italic mb-6">"The lash extensions are amazing! Joy really understood the look I wanted, and they feel so natural. Plus, the home service is super convenient. Best beauty service in Lagos!"</p>
+                    <p class="font-semibold text-gray-800">- Funke A.</p>
+                    <p class="text-sm text-gray-500">Banana Island, Lagos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section id="faqs" class="bg-gray-100 py-16 px-4 rounded-xl shadow-inner mx-4 mt-6">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-900" style="font-family: 'Playfair Display', serif;">Frequently Asked Questions</h2>
+            <div class="max-w-3xl mx-auto space-y-6">
+                <!-- FAQ Item 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-md cursor-pointer toggle-faq">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-lg font-semibold text-gray-800">What is your booking process?</h3>
+                        <i class="fas fa-chevron-down text-gray-500 toggle-icon"></i>
+                    </div>
+                    <div class="faq-content hidden mt-4 text-gray-600">
+                        <p>To book a service, simply select your desired service on our "Services" page and click "Book Now". You'll then choose your preferred date and time. A deposit of 30-50% is required to confirm your booking, with the remaining balance due after the service.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-md cursor-pointer toggle-faq">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-lg font-semibold text-gray-800">What is your cancellation/rescheduling policy?</h3>
+                        <i class="fas fa-chevron-down text-gray-500 toggle-icon"></i>
+                    </div>
+                    <div class="faq-content hidden mt-4 text-gray-600">
+                        <p>Deposits are non-refundable. If you need to reschedule or cancel, please do so at least 24 hours before your appointment. Cancellations or no-shows with less than 24 hours' notice will result in the forfeiture of your deposit.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-md cursor-pointer toggle-faq">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-lg font-semibold text-gray-800">What payment methods do you accept?</h3>
+                        <i class="fas fa-chevron-down text-gray-500 toggle-icon"></i>
+                    </div>
+                    <div class="faq-content hidden mt-4 text-gray-600">
+                        <p>For local payments, we accept Flutterwave. For international clients, we use PayPal. You can also make a bank transfer and upload proof of payment.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item 4 -->
+                <div class="bg-white p-6 rounded-xl shadow-md cursor-pointer toggle-faq">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-lg font-semibold text-gray-800">What are the client requirements for waxing/piercing?</h3>
+                        <i class="fas fa-chevron-down text-gray-500 toggle-icon"></i>
+                    </div>
+                    <div class="faq-content hidden mt-4 text-gray-600">
+                        <p>Please arrive on time and ready for your service. Avoid caffeine before waxing/piercing. Do not apply lotions, oils, or makeup to the treated areas prior to your appointment. For waxing, hair should be at least ¼ inch, and for Brazilian wax, no shaving 2 weeks prior.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item 5 -->
+                <div class="bg-white p-6 rounded-xl shadow-md cursor-pointer toggle-faq">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-lg font-semibold text-gray-800">Do you offer home services?</h3>
+                        <i class="fas fa-chevron-down text-gray-500 toggle-icon"></i>
+                    </div>
+                    <div class="faq-content hidden mt-4 text-gray-600">
+                        <p>Yes, we offer convenient home and mobile services within Ajah and Lekki, extending from Sangotedo to Banana Island, Lagos. Studio appointments are also available upon request and availability.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-4">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-900" style="font-family: 'Playfair Display', serif;">Get in Touch with HerGlamCode</h2>
+            <div class="max-w-3xl mx-auto bg-white p-8 rounded-xl shadow-lg border-t-4 border-herglam-mauve">
+                <p class="text-center text-lg text-gray-700 mb-8">
+                    Have questions or ready to book your glam experience? Reach out to us through any of the channels below. We are available daily from 8:00 AM – 9:00 PM.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4" style="font-family: 'Playfair Display', serif;">Direct Contact</h3>
+                        <div class="space-y-4 text-gray-700 text-lg">
+                            <p><i class="fab fa-whatsapp text-green-500 mr-3"></i> WhatsApp: <a href="https://wa.link/q9vwrc" target="_blank" class="text-herglam-mauve hover:underline">Click to Chat!</a></p>
+                            <p><i class="fas fa-phone-alt text-blue-500 mr-3"></i> Phone: <a href="tel:+2347025541878" class="text-herglam-mauve hover:underline">07025541878</a></p>
+                            <p><i class="fas fa-envelope text-red-500 mr-3"></i> Email: <a href="mailto:herglamcode@gmail.com" class="text-herglam-mauve hover:underline">herglamcode@gmail.com</a></p>
+                            <p><i class="fas fa-map-marker-alt text-purple-500 mr-3"></i> Service Area: Ajah & Lekki, Lagos, Nigeria (Extending from Sangotedo to Banana Island)</p>
+                            <p><i class="fab fa-instagram text-pink-500 mr-3"></i> Instagram: <a href="https://www.instagram.com/herglamcode/" target="_blank" class="text-herglam-mauve hover:underline">@herglamcode</a></p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4" style="font-family: 'Playfair Display', serif;">Send Us a Message</h3>
+                        <form class="space-y-4">
+                            <div>
+                                <label for="contact-name" class="sr-only">Name</label>
+                                <input type="text" id="contact-name" name="name" class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-herglam-mauve focus:border-herglam-mauve sm:text-base placeholder-gray-400" placeholder="Your Name" required>
+                            </div>
+                            <div>
+                                <label for="contact-email" class="sr-only">Email</label>
+                                <input type="email" id="contact-email" name="email" class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-herglam-mauve focus:border-herglam-mauve sm:text-base placeholder-gray-400" placeholder="your@example.com" required>
+                            </div>
+                            <div>
+                                <label for="contact-message" class="sr-only">Message</label>
+                                <textarea id="contact-message" name="message" rows="5" class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-herglam-mauve focus:border-herglam-mauve sm:text-base placeholder-gray-400" placeholder="Your message..." required></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-herglam-mauve text-white py-3 px-6 rounded-md font-semibold hover:bg-herglam-mauve-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-herglam-mauve shadow-md transform hover:scale-105 transition duration-300 ease-in-out text-lg">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 px-4 rounded-t-xl mx-2 mb-2 mt-6">
+        <div class="container mx-auto text-center">
+            <h3 class="text-2xl font-bold mb-4 text-herglam-mauve" style="font-family: 'Playfair Display', serif;">HerGlamCode</h3>
+            <p class="mb-4 text-gray-400">&copy; 2025 HerGlamCode. All rights reserved.</p>
+            <p class="mb-6 text-gray-400">Premium Beauty Services in Ajah, Lekki, and wider Lagos, Nigeria.</p>
+            <div class="flex justify-center space-x-6 text-3xl">
+                <a href="https://www.instagram.com/herglamcode/" target="_blank" class="hover:text-herglam-mauve transition duration-300 ease-in-out"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.link/q9vwrc" target="_blank" class="hover:text-herglam-mauve transition duration-300 ease-in-out"><i class="fab fa-whatsapp"></i></a>
+                <a href="mailto:herglamcode@gmail.com" class="hover:text-herglam-mauve transition duration-300 ease-in-out"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+2347025541878" class="hover:text-herglam-mauve transition duration-300 ease-in-out"><i class="fas fa-phone-alt"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile menu toggling
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = document.querySelectorAll('#mobile-menu a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+
+        // JavaScript for FAQ accordion
+        document.querySelectorAll('.toggle-faq').forEach(item => {
+            item.addEventListener('click', event => {
+                const content = item.querySelector('.faq-content');
+                const icon = item.querySelector('.toggle-icon');
+                content.classList.toggle('hidden');
+                icon.classList.toggle('fa-chevron-down');
+                icon.classList.toggle('fa-chevron-up');
+            });
+        });
+
+        // Placeholder for smooth scrolling (CSS scroll-behavior: smooth handles most cases, but for older browsers or specific needs, JS might be added)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
